@@ -1,0 +1,140 @@
+/* ========= Basic Reset ========= */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: 0.2s;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: var(--bg);
+    height: 100vh;
+    font-family: Poppins, sans-serif;
+}
+
+/* ========= Theme Variables ========= */
+:root {
+    --bg: #e6e7ee;
+    --calc-bg: #f1f3f8;
+    --btn-bg: #ffffff;
+    --btn-shadow: #b9c1d1;
+    --text: #222;
+}
+
+body.dark {
+    --bg: #1c1f26;
+    --calc-bg: #242833;
+    --btn-bg: #2c3242;
+    --btn-shadow: #101218;
+    --text: #f1f1f1;
+}
+
+/* ========= Dark/Light Toggle ========= */
+#themeToggle {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background: var(--btn-bg);
+    color: var(--text);
+    padding: 10px 12px;
+    border-radius: 50%;
+    font-size: 1.3rem;
+    border: none;
+    box-shadow: 2px 3px 7px var(--btn-shadow);
+    cursor: pointer;
+}
+
+/* ========= Calculator ========== */
+.calculator {
+    background: var(--calc-bg);
+    padding: 25px;
+    width: 400px;
+    border-radius: 20px;
+    box-shadow: 10px 10px 25px var(--btn-shadow),
+                -10px -10px 25px #ffffff55;
+}
+
+/* ========= Display ========= */
+.display-container {
+    display: flex;
+    margin-bottom: 15px;
+}
+
+.display {
+    flex: 1;
+    padding: 18px;
+    background: var(--btn-bg);
+    color: var(--text);
+    font-size: 2rem;
+    border-radius: 12px;
+    overflow-x: auto;
+    box-shadow: inset 3px 3px 8px var(--btn-shadow),
+                inset -3px -3px 8px #ffffff55;
+}
+
+/* ========= Buttons Grid ========= */
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 12px;
+}
+
+/* ========= Buttons ========= */
+button {
+    padding: 18px;
+    font-size: 1.1rem;
+    border: none;
+    border-radius: 12px;
+    background: var(--btn-bg);
+    color: var(--text);
+    font-weight: 500;
+    cursor: pointer;
+    box-shadow: 5px 5px 10px var(--btn-shadow),
+                -5px -5px 10px #ffffff55;
+}
+
+button:active {
+    transform: scale(0.95);
+    box-shadow: inset 5px 5px 10px var(--btn-shadow),
+                inset -5px -5px 10px #ffffff55;
+}
+
+/* Special Buttons */
+.operator {
+    background: #ffb84d;
+    color: #fff;
+}
+
+.equals {
+    background: #3f8cff;
+    color: #fff;
+}
+
+.clear {
+    background: #ff4d4d;
+    color: white;
+}
+
+#back-space {
+    padding: 10px;
+    width: 60px;
+}
+
+
+ /* mute button*/
+#soundToggle {
+    position: absolute;
+    top: 70px;
+    right: 20px;
+    background: var(--btn-bg);
+    color: var(--text);
+    padding: 10px 12px;
+    border-radius: 50%;
+    font-size: 1.3rem;
+    border: none;
+    box-shadow: 2px 3px 7px var(--btn-shadow);
+    cursor: pointer;
+}

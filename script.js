@@ -128,10 +128,10 @@ switch (key) {
 }
 })
 // Import sound effects
-const clickSFX = new Audio("../public/sounds/ui/btn-click.wav");
-const calculateSFX = new Audio("../public/sounds/ui/btn-calculate.wav");
-const errorSFX = new Audio("../public/sounds/ui/error.wav");
-const removeSFX = new Audio("../public/sounds/ui/btn-remove.wav");
+const clickSFX = new Audio("./public/sounds/ui/btn-click.wav");
+const calculateSFX = new Audio("./public/sounds/ui/btn-calculate.wav");
+const errorSFX = new Audio("./public/sounds/ui/error.wav");
+const removeSFX = new Audio("./public/sounds/ui/btn-remove.wav");
 
 function playSFX(SFX) {
   if (!soundEnabled) return;   // stops sound if muted
